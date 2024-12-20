@@ -4,13 +4,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.header{
+.header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)),url('file:///Users/yafet/Desktop/DEN-web/Assets/img/headerbg.jpeg');
-    background-position: center;
-    background-size: cover;
     position: relative;
+    overflow: hidden;
+}
+.header .background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    filter: brightness(50%); 
 }
 
 nav{
